@@ -1,0 +1,10 @@
+#compdef chore
+
+_arguments "*:commands:(list projects contexts keys add delete modify undo)"
+_arguments "*:commands:(add delete modify undo)"
+_arguments "*:filter-aliases:($(ls -1 ~/.chore/filter-aliases))"
+_arguments "*:command-aliases:($(ls -1 ~/.chore/command-aliases))"
+_arguments "*:modification-aliases:($(ls -1 ~/.chore/modification-aliases))"
+_arguments "*:tags:($(chore all projects))"
+_arguments "*:tags:($(chore all contexts))"
+_arguments "*:tags:($(chore all keys))"
