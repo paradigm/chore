@@ -46,6 +46,7 @@ given amount of time in in the future:
 - `h` indicates hours, e.g. `3h`.
 - `d` indicates days, e.g. `3d`.
 - `w` indicates weeks, e.g. `3w`.
+- `W` indicates week days, e.g. `3W`.
 - `M` indicates months, e.g. `3M`.
 - `y` indicates years, e.g. `3y`.
 
