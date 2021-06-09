@@ -128,7 +128,7 @@ impl<'a> Command {
             stdout.push('\n');
         }
 
-        Bg::Default.print(&mut stdout, print_color);
+        Fg::Default.print(&mut stdout, print_color);
         Ok(Output::JustPrint { stdout })
     }
 
@@ -163,7 +163,7 @@ impl<'a> Command {
         }
         Fg::Default.print(&mut stdout, print_color);
 
-        Bg::Default.print(&mut stdout, print_color);
+        Fg::Default.print(&mut stdout, print_color);
         Ok(Output::JustPrint { stdout })
     }
 
@@ -207,7 +207,7 @@ impl<'a> Command {
             tasks.push('\n');
         }
 
-        Bg::Default.print(&mut stdout, print_color);
+        Fg::Default.print(&mut stdout, print_color);
         Ok(Output::WriteFiles {
             stdout,
             confirm: false,
@@ -258,7 +258,7 @@ impl<'a> Command {
             tasks.push('\n');
         }
 
-        Bg::Default.print(&mut stdout, print_color);
+        Fg::Default.print(&mut stdout, print_color);
         Ok(Output::WriteFiles {
             stdout,
             confirm: removed.len() > 1,
@@ -403,7 +403,7 @@ impl<'a> Command {
             tasks.push('\n');
         }
 
-        Bg::Default.print(&mut stdout, print_color);
+        Fg::Default.print(&mut stdout, print_color);
         Ok(Output::WriteFiles {
             stdout,
             confirm: changed > 1,
@@ -466,7 +466,7 @@ impl<'a> Command {
             undo.push('\n');
         }
 
-        Bg::Default.print(&mut stdout, print_color);
+        Fg::Default.print(&mut stdout, print_color);
         Ok(Output::WriteFiles {
             stdout,
             confirm: true,
